@@ -28,7 +28,7 @@ html:focus-within {
 }
 
 body {
-  text-rendering: optimizeSpeed;
+    padding-bottom: 32px;
 }
 
 a:not([class]) {
@@ -100,6 +100,7 @@ h2 {
 h3 {
     color: #076678;
     margin-bottom: 16px; 
+    color: #ADD8E6;
 }
 
 p, li {
@@ -111,6 +112,11 @@ p, li {
 
 a, a:visited {
     color: #fe8019;
+    transition: color .25s;
+}
+
+a:hover {
+    color: #803808;
 }
 
 .tech-list {
@@ -203,6 +209,8 @@ a, a:visited {
     box-shadow: 4px 4px 16px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 4px 4px 16px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 4px 4px 16px 0px rgba(0,0,0,0.75);
+    text-decoration: none;
+    font-weight: 500;
 }
 
 .button--primary {
@@ -219,4 +227,8 @@ a, a:visited {
 
 .button--secondary {
     background-color: #8ec07c;
+}
+
+.button--primary i, .button--secondary i {
+    margin-right: 4px; 
 }
